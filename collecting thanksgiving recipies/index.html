@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+    <title>thanksgiving</title>
+</head>
+<body>
+    <h1>Collecting thanksgiving recipies</h1>
+    <form id="theBigFormInTheSky">
+        <label for="email">Your email:</label>
+        <input type="email" name="email" required="required" id="email">
+        <br>
+        <label for="todaysDate">Today's date:</label>
+        <input type="date" name="todaysDate" required="required" id="todaysDate">
+        <br>
+        <label for="recipieName">Recipie name:</label>
+        <input type="text" name="recipieName" required="required" id="recipieName">
+        <br>
+        <label for="ingreedient">Add ingreedients to your recipie:</label>
+        <input type="text" id="ingreedient" name="ingreedient">
+        <input type="button" value="add ingreedient" onclick="addIngreedient()" />
+        <div id="ingreedientList"></div>
+        
+        <select name="recipieType" id="recipieType">
+        <option value="Savory">Savory</option>
+        <option value="Sweet">Sweet</option>
+        <option value="Soup">Soup</option>
+        </select>
+        <br>
+        <input type="button" value="Send your recipie to us" onclick="submitData()">
+        <script src="index.js"></script>
+    </form>
+    <div id="errorMessage"></div>
+</body>
+
+</html>
